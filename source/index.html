@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: {{projectTitle}}</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>CRM-example</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-  </body>
+<body class="page__body">
+  <div class="page__sidebar sidebar">
+    <img class="sidebar__logo logo" src="./img/logo.png" width="109" height="28">
+    <nav class="sidebar__site-menu site-menu">
+      <ul class="site-menu__list">
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Итоги</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Сообщения</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Звонки</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Контрагенты</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Документы</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Исполнители</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Отчеты</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">База знаний</a></li>
+        <li class="site-menu__item"><a class="site-menu__link link" href="#">Настойки</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__actions actions">
+      <button class="actions__button button button--add" type="button">
+        Добавить заказ
+        <span class="icon"></span>
+      </button>
+      <button class="actions__button button button--pay" type="button">
+        Оплата
+        <span class="icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="page__menu-container menu-container">
+    <header class="page__header page-header">
+      <div class="page-header__information information">
+        <div class="page-header__date date">
+          Среда, 13 окт
+        </div>
+        <ul class="page-header__state-list state-list">
+          <li class="state-list__item">Новые звонки</li>
+          <li class="state-list__item">Качество разговоров</li>
+          <li class="state-list__item">Конверсия в заказ</li>
+        </ul>
+      </div>
+      <div class="page-header__user-menu user-menu">
+        <div class="user-menu__search search">
+          <img class="search__search-icon search-icon" src="./img/search.png" width="16" height="16">
+        </div>
+        <select class="user-menu__user-name user-name" name="select">
+          <option value="ИП Сидорова Александра Михайловна" selected>ИП Сидорова Александра Михайловна</option>
+        </select>
+        <div class="user-menu__user-avatar user-avatar">
+          <img class="user-avatar__image" src="./img/img.png">
+        </div>
+      </div>
+    </header>
+    <main class="page__main page-main">
+      <div class="page-main__picker picker">
+        <button class="picker__button button button--balance" type="button">Баланс: 272 Р</button>
+        <input class="picker__date-picker date-picker" type="date">
+      </div>
+      <div class="page-main__filters filters">
+        <input class="filters__search search" placeholder="Поиск по звонкам">
+        <ul class="filters__filters-list filters-list">
+          <li class="filters-list__item">Все типы</li>
+          <li class="filters-list__item">Все сотрудники</li>
+          <li class="filters-list__item">Все звонки</li>
+          <li class="filters-list__item">Все оценки</li>
+          <li class="filters-list__item">Все ошибки</li>
+        </ul>
+      </div>
+      <table class="page-main__table-calls table-calls">
+        <tr class="table-calls__heading">
+          <th>Тип</th>
+          <th>Время</th>
+          <th>Сотрудник</th>
+          <th>Звонок</th>
+          <th>Источник</th>
+          <th>Оценка</th>
+          <th>Длительность</th>
+        </tr>
+        <tr class="table-calls__line">
+          <td>Тип</td>
+          <td>19:00</td>
+          <td>Фото сотрудника</td>
+          <td>+7(987)567-17-12</td>
+          <td>Rabota.ru</td>
+          <td>Отлично</td>
+          <td>12:06</td>
+        </tr>
+      </table>
+    </main>
+  </div>
+</body>
+
 </html>

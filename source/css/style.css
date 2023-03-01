@@ -1,0 +1,81 @@
+.page__body {
+  width: 1920px;
+  display: flex;
+  margin: 0;
+}
+
+.page__menu-container {
+  width: 1680px;
+  margin-left: 240px; /* Same as the width of the sidebar */
+  padding: 0px 120px;
+}
+
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 240px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #091336; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.information {
+  display: flex;
+}
+
+.state-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filters-list {
+  display: flex;
+}
+
+.table-calls {
+  width: 100%;
+}
+
+.table-calls__heading {
+  text-align: left;
+}
+
+.table-calls__heading :last-child {
+  text-align: right;
+}
+
+.table-calls__line {
+  text-align: left;
+}
+
+.table-calls__line :last-child {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */

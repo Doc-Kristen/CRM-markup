@@ -1,7 +1,7 @@
 {
-  "name": "crm-markup",
+  "name": "cat-energy",
   "private": true,
-  "description": "crm-markup",
+  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",

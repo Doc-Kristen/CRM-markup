@@ -1,0 +1,19 @@
+.page__body {
+  width: 1920px;
+  display: flex;
+  margin: 0;
+  // margin: 0;
+  // min-width: 320px;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  // background-color: aqua;
+}
+
+.page__menu-container {
+  width: 1680px;
+  margin-left: 240px; /* Same as the width of the sidebar */
+  padding: 0px 120px;
+}
+
+
