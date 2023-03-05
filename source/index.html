@@ -130,8 +130,8 @@
         <span class="button__text">
           Оплата
         </span>
-        <svg class="button__navigation-icon" aria-hidden="true" focusable="false"
-          xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+        <svg class="button__navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+          width="26" height="26" fill="none">
           <path fill="#D8E4FB" fill-opacity=".6"
             d="M13 .5a12.5 12.5 0 1 0 0 25 12.5 12.5 0 0 0 0-25Zm1.3 18.8h-2.6v-2.6h2.6v2.6Zm0-5h-2.6V6.7h2.6v7.5Z" />
         </svg>
@@ -141,24 +141,61 @@
   <div class="page__menu-container menu-container">
     <header class="page__header page-header">
       <div class="page-header__information information">
-        <div class="page-header__date date">
+        <div class="page-header__date">
           Среда, 13 окт
         </div>
         <ul class="page-header__state-list state-list">
-          <li class="state-list__item">Новые звонки</li>
-          <li class="state-list__item">Качество разговоров</li>
-          <li class="state-list__item">Конверсия в заказ</li>
+          <li class="state-list__item">
+            <div class="state-list__text">
+              <span class="state-list__termin">Новые звонки</span>
+              <span class="state-list__description state-list__description-calls">20 из 30 шт</span>
+            </div>
+            <div class="state-list__progress">
+              <span class="state-list__meter state-list__meter--calls">
+              </span>
+            </div>
+          </li>
+          <li class="state-list__item">
+            <div class="state-list__text">
+              <span class="state-list__termin">Качество разговоров</span>
+              <span class="state-list__description state-list__description--quality">40%</span>
+            </div>
+            <div class="state-list__progress">
+              <span class="state-list__meter state-list__meter--quality">
+            </div>
+          </li>
+          <li class="state-list__item">
+            <div class="state-list__text">
+              <span class="state-list__termin">Конверсия в заказ</span>
+              <span class="state-list__description state-list__description--conversion">67%</span>
+            </div>
+            <div class="state-list__progress">
+              <span class="state-list__meter state-list__meter--conversion">
+            </div>
+          </li>
         </ul>
       </div>
       <div class="page-header__user-menu user-menu">
         <div class="user-menu__search search">
-          <img class="search__search-icon search-icon" src="./img/search.png" width="16" height="16">
+          <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+            <path
+              d="M11.4 10h-.7l-.2-.2a6 6 0 1 0-.6.6l.2.3v.7l4.5 4.6 1.4-1.4-4.6-4.5ZM6 10a4.1 4.1 0 1 1 0-8.2 4.1 4.1 0 0 1 0 8.3Z" />
+          </svg>
         </div>
-        <select class="user-menu__user-name user-name" name="select">
-          <option value="ИП Сидорова Александра Михайловна" selected>ИП Сидорова Александра Михайловна</option>
-        </select>
+        <div class="user-menu__user-name user-name">
+          <span>ИП Сидорова Александра Михайловна</span>
+          <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+          xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+          <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+        </svg>
+        </div>
         <div class="user-menu__user-avatar user-avatar">
           <img class="user-avatar__image" src="./img/img.png">
+          <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+            xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+            <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+          </svg>
         </div>
       </div>
     </header>

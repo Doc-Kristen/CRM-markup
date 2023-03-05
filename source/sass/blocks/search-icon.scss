@@ -1,0 +1,12 @@
+.search-icon {
+  fill: $color-gray-search;
+}
+
+.search-icon:hover,
+.search-icon:focus {
+  fill: $color-hover-blue;
+}
+
+.search-icon:active {
+  fill: $color-active-blue;
+}

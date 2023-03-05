@@ -1,4 +1,8 @@
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  color: $color-light-gray;
+  width: 486px;
+  align-items: center;
 }

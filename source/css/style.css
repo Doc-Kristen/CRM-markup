@@ -1,5 +1,5 @@
 .page__body {
-  width: 1920px;
+  width: 1970px;
   display: flex;
   margin: 0;
   font-family: "SF Pro Display", "Arial", sans-serif;
@@ -13,6 +13,8 @@
   margin-left: 240px;
   /* Same as the width of the sidebar */
   padding: 0px 120px;
+  outline: 1px solid #19da5d;
+  outline-offset: -1px;
 }
 
 .sidebar {
@@ -152,7 +154,23 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: space-between;
+}
+
+.page-header__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__date {
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  color: #899CB1;
+  margin-right: 86px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
 }
 
 .information {
@@ -160,13 +178,89 @@
 }
 
 .state-list {
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+}
+
+.state-list__termin {
+  color: rgb(0, 0, 0);
+}
+
+.state-list__description-calls {
+  color: #28A879;
+}
+
+.state-list__description--quality {
+  color: #FFD500;
+}
+
+.state-list__description--conversion {
+  color: #EA1A4F;
+}
+
+.state-list__progress {
+  display: block;
+  height: 6px;
+  width: 156px;
+  border-radius: 12px;
+  background-color: #DEE6F5;
+}
+
+.state-list__meter {
+  display: block;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.state-list__meter--calls {
+  background-color: #28A879;
+  width: 45%;
+}
+
+.state-list__meter--quality {
+  background-color: #FFD500;
+  width: 40%;
+}
+
+.state-list__meter--conversion {
+  background-color: #EA1A4F;
+  width: 67%;
 }
 
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  color: #899CB1;
+  width: 486px;
+  align-items: center;
+}
+
+.user-avatar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 68px;
+}
+
+.search-icon {
+  fill: #ADBFDF;
+}
+
+.search-icon:hover,
+.search-icon:focus {
+  fill: #0000F4;
+}
+
+.search-icon:active {
+  fill: #274BC8;
 }
 
 .picker {

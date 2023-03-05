@@ -1,5 +1,21 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: space-between;
+}
+
+.page-header__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__date {
+  font-family: $font-text;
+  color: $color-light-gray;
+  margin-right: 86px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
 }

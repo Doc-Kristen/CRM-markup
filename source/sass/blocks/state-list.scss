@@ -1,4 +1,56 @@
 .state-list {
+  width: 600px;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+}
+
+.state-list__termin {
+  color: $color-black;
+}
+
+.state-list__description-calls {
+  color: $color-green;
+}
+
+.state-list__description--quality {
+  color: $color-yellow;
+}
+
+.state-list__description--conversion {
+  color: $color-red;
+}
+
+
+.state-list__progress {
+  display: block;
+  height: 6px;
+  width: 156px;
+  border-radius: 12px;
+  background-color: $color-gray-meter
+}
+
+.state-list__meter {
+  display: block;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.state-list__meter--calls {
+  background-color: $color-green;
+  width: 45%;
+}
+
+.state-list__meter--quality {
+  background-color: $color-yellow;
+  width: 40%;
+}
+
+.state-list__meter--conversion {
+  background-color: $color-red;
+  width: 67%;
 }
