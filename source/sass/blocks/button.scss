@@ -1,0 +1,37 @@
+.button {
+  display: block;
+  font-family: $font-text;
+  border-radius: 4px;
+}
+
+.actions__button {
+  margin-bottom: 32px;
+}
+
+.button--sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 200px;
+  height: 52px;
+  color: $color-white;
+  background-color: $color-blue;
+  border: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 148%;
+}
+
+.button--sidebar:hover,
+.button--sidebar:focus {
+  background-color: $color-hover-blue;
+}
+
+.button--sidebar:active {
+  background-color: $color-active-blue;
+}
+
+.button__navigation-icon {
+  margin-left: 20px;
+  margin-right: 20px;
+}

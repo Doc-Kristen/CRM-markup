@@ -1,12 +1,38 @@
 .sidebar {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 240px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 240px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
   left: 0;
-  background-color: $color-dark-blue; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: $color-dark-blue;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
   padding-top: 20px;
   color: rgba(255, 255, 255, 0.6);
+  font-family: $font-text;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sidebar__logo {
+  margin-left: 12px;
+}
+
+.sidebar__site-menu {
+  margin-bottom: 64px;
+}
+
+.sidebar__actions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }

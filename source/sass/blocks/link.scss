@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  color: $color-gray;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: $color-white;
+}
