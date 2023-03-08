@@ -183,12 +183,12 @@
               d="M11.4 10h-.7l-.2-.2a6 6 0 1 0-.6.6l.2.3v.7l4.5 4.6 1.4-1.4-4.6-4.5ZM6 10a4.1 4.1 0 1 1 0-8.2 4.1 4.1 0 0 1 0 8.3Z" />
           </svg>
         </div>
-        <div class="user-menu__user-name user-name">
-          <span>ИП Сидорова Александра Михайловна</span>
+        <div class="user-menu__user-name">
+          <span class="user-menu__text">ИП Сидорова Александра Михайловна</span>
           <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
-          xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
-          <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
-        </svg>
+            xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+            <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+          </svg>
         </div>
         <div class="user-menu__user-avatar user-avatar">
           <img class="user-avatar__image" src="./img/img.png">
@@ -201,17 +201,84 @@
     </header>
     <main class="page__main page-main">
       <div class="page-main__picker picker">
-        <button class="picker__button button button--balance" type="button">Баланс: 272 Р</button>
-        <input class="picker__date-picker date-picker" type="date">
+        <button class="picker__button button button--balance" type="button">
+          <div class="picker__description">
+            <span class="picker__text">
+              Баланс:
+            </span>
+            <span class="picker__balance">
+              272 ₽
+            </span>
+          </div>
+          <svg class="button__balance-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" fill="none">
+            <path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm6 13.2h-4.8V18h-2.4v-4.8H6v-2.4h4.8V6h2.4v4.8H18v2.4Z" />
+          </svg>
+        </button>
+        <div class="picker__date-picker date-picker">
+          <svg class="date-picker__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            width="7" height="10" fill="none">
+            <path fill="#ADBFDF" d="M6.2 8.8 2.4 5l3.8-3.8L5 0 0 5l5 5 1.2-1.2Z" />
+          </svg>
+          <div class="date-picker__calendar">
+            <svg class="date-picker__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="16" height="18" fill="none">
+              <path fill="#ADBFDF"
+                d="M14.4 1.6h-.8V0H12v1.6H4V0H2.4v1.6h-.8C.7 1.6 0 2.4 0 3.3v13c0 1 .7 1.7 1.6 1.7h12.8c.9 0 1.6-.7 1.6-1.6V3.3c0-1-.7-1.7-1.6-1.7Zm0 14.8H1.6V5.7h12.8v10.7Z" />
+            </svg>
+            <span class="date-picker__date">3 дня</span>
+          </div>
+          <svg class="date-picker__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+            width="7" height="10" fill="none">
+            <path fill="#ADBFDF" d="M.6 8.8 4.4 5 .6 1.2 1.8 0l5 5-5 5L.6 8.8Z" />
+          </svg>
+        </div>
       </div>
       <div class="page-main__filters filters">
-        <input class="filters__search search" placeholder="Поиск по звонкам">
+        <div class="filters__search search">
+          <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+            <path
+              d="M11.4 10h-.7l-.2-.2a6 6 0 1 0-.6.6l.2.3v.7l4.5 4.6 1.4-1.4-4.6-4.5ZM6 10a4.1 4.1 0 1 1 0-8.2 4.1 4.1 0 0 1 0 8.3Z" />
+          </svg>
+          <input class="search__search-input" placeholder="Поиск по звонкам">
+        </div>
         <ul class="filters__filters-list filters-list">
-          <li class="filters-list__item">Все типы</li>
-          <li class="filters-list__item">Все сотрудники</li>
-          <li class="filters-list__item">Все звонки</li>
-          <li class="filters-list__item">Все оценки</li>
-          <li class="filters-list__item">Все ошибки</li>
+          <li class="filters-list__item">
+            <span class="filters-list__text">Все типы</span>
+            <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+              <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+            </svg>
+          </li>
+          <li class="filters-list__item">
+            <span class="filters-list__text">Все сотрудники</span>
+            <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+              <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+            </svg>
+          </li>
+          <li class="filters-list__item">
+            <span class="filters-list__text">Все звонки</span>
+            <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+              <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+            </svg>
+          </li>
+          <li class="filters-list__item">
+            <span class="filters-list__text">Все оценки</span>
+            <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+              <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+            </svg>
+          </li>
+          <li class="filters-list__item">
+            <span class="filters-list__text">Все ошибки</span>
+            <svg class="search__search-icon search-icon" aria-hidden="true" focusable="false"
+              xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+              <path d="M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2 1.4.6Z" opacity=".8" />
+            </svg>
+          </li>
         </ul>
       </div>
       <table class="page-main__table-calls table-calls">
@@ -225,7 +292,12 @@
           <th>Длительность</th>
         </tr>
         <tr class="table-calls__line">
-          <td>Тип</td>
+          <td>
+            <svg class="table-calls__type-call" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="13" height="13" fill="none">
+              <path d="M12.5 1.2 11.3 0 1.7 9.7V4.2H0v8.3h8.3V11H2.8l9.7-9.7Z" />
+            </svg>
+          </td>
           <td>19:00</td>
           <td>Фото сотрудника</td>
           <td>+7(987)567-17-12</td>

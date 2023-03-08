@@ -1,0 +1,14 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search__search-input {
+  color: $color-placeholder-gray;
+  background: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  border: none;
+}

@@ -1,9 +1,18 @@
 .table-calls {
-  width: 100%;
+  width: 1440px;
+  border-radius: 8px;
+  background-color: $color-white;
+  align-self: center;
 }
 
-.table-calls__heading {
+.table-calls__heading th {
+  font-family: $font-text;
   text-align: left;
+  color: $color-light-gray;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 20px 40px;
 }
 
 .table-calls__heading :last-child {
@@ -16,4 +25,8 @@
 
 .table-calls__line :last-child {
   text-align: right;
+}
+
+.table-calls__type-call {
+  fill: $color-incoming-call;
 }

@@ -1,3 +1,22 @@
 .filters-list {
   display: flex;
+  list-style-type: none;
+  width: 753px;
+  justify-content: space-between;
+}
+
+.filters-list__item:hover {
+  color: $color-hover-blue;
+
+  .search-icon {
+    fill: $color-hover-blue;
+  }
+}
+
+.filters-list__item:active {
+  color: $color-active-blue;
+
+  .search-icon {
+    fill: $color-active-blue;
+  }
 }

@@ -1,5 +1,22 @@
 .picker {
+  font-family: $font-text;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-end;
+  background-color: $color-main-gray;
+}
+
+.picker__date-picker {
+  margin-left: 48px;
+}
+.picker__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148%;
+  color: $color-light-gray;
+}
+
+.picker__balance {
+  color: $color-black;
 }

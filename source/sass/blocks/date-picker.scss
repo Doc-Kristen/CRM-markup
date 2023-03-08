@@ -1,0 +1,15 @@
+.date-picker {
+  display: flex;
+  width: 115px;
+  height: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-picker__calendar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58px;
+  color: $color-blue;
+}

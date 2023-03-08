@@ -6,3 +6,17 @@
   width: 486px;
   align-items: center;
 }
+
+.user-menu__user-name:hover,
+.user-menu__user-name:focus {
+  color: $color-hover-blue;
+
+  .user-menu__text {
+    color: $color-hover-blue;
+  }
+
+  .search-icon {
+    fill: $color-hover-blue;
+  }
+
+}
