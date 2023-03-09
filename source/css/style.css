@@ -392,27 +392,19 @@
   fill: #274BC8;
 }
 
-.table-container {
-  width: 1440px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #FFFFFF;
-  align-self: center;
-  border-radius: 8px;
-}
-
 .table-calls {
-  width: 100%;
+  width: 1440px;
   table-layout: fixed;
   background-color: #FFFFFF;
-  align-self: center;
   border-collapse: collapse;
   word-break: break-all;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .table-calls__heading th {
   font-family: "SF Pro Display", "Arial", sans-serif;
-  text-align: left;
   color: #899CB1;
   font-weight: 400;
   font-size: 14px;
@@ -424,6 +416,7 @@
 
 .table-calls__heading :nth-child(1) {
   width: 50px;
+  padding-left: 40px;
 }
 
 .table-calls__heading :nth-child(2) {
@@ -447,33 +440,179 @@
 }
 
 .table-calls__heading :nth-child(7) {
-  width: 90px;
+  width: 100px;
+  padding-right: 40px;
 }
 
 .table-calls__heading :last-child {
   text-align: right;
 }
 
-.table-calls__line {
-  text-align: left;
-}
-
 .table-calls__line td {
-  text-align: left;
   border-top: 1px solid rgba(216, 228, 251, 0.32);
   padding-top: 20px;
   padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
 }
 
-.table-calls__line:nth-child(1) {
-  text-align: right;
+.table-calls__line:hover {
+  background-color: #F1F4F9;
 }
 
-.table-calls__line :last-child {
-  text-align: right;
+.table-calls__type {
+  text-align: left;
+  padding-left: 40px;
 }
 
 .table-calls__type-call {
+  width: 13px;
+  height: 13px;
+}
+
+.table-calls__type-call--incoming-call {
   fill: #005FF8;
+}
+
+.table-calls__type-call--unsuccessful-incoming-call {
+  fill: #EA1A4F;
+}
+
+.table-calls__type-call--outgoing-call {
+  fill: #28A879;
+  transform: rotate(180deg);
+}
+
+.table-calls__type-call--unsuccessful-outgoing-call {
+  fill: #EA1A4F;
+  transform: rotate(180deg);
+}
+
+.table-calls__worker {
+  position: relative;
+}
+
+.table-calls__internet-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 100px;
+  top: 30px;
+}
+
+.table-calls__source {
+  color: #5E7793;
+}
+
+.table-calls__rating {
+  position: relative;
+}
+
+.table-calls__time {
+  text-align: end;
+  padding-right: 40px;
+}
+
+.rating {
+  display: inline-block;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  border-radius: 4px;
+  padding: 6px 8px;
+  left: 36px;
+}
+
+.recognition {
+  display: inline-block;
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #005FF8;
+  background-color: #FFFFFF;
+  border: 1px solid #005FF8;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
+}
+
+.rating--excellent {
+  position: relative;
+  color: #28A879;
+  background-color: #DBF8EF;
+  border: 1px solid #28A879;
+}
+
+.rating--excellent::after {
+  background-color: #28A879;
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.rating--excellent::before {
+  background-color: #28A879;
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 0 #28A879;
+}
+
+.rating--good {
+  position: relative;
+  color: #091336;
+  background-color: #D8E4FB;
+  border: 1px solid #ADBFDF;
+}
+
+.rating--good::before {
+  background-color: #ADBFDF;
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 0 #ADBFDF;
+}
+
+.rating--bad {
+  position: relative;
+  color: #EA1A4F;
+  background-color: #FEE9EF;
+  border: 1px solid #EA1A4F;
+}
+
+.rating--bad::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 0 #EA1A4F;
+}
+
+.no-script {
+  font-family: "SF Pro Display", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #EA1A4F;
 }
 /*# sourceMappingURL=style.css.map */

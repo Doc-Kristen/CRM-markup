@@ -1,0 +1,102 @@
+.rating {
+  display: inline-block;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  border-radius: 4px;
+  padding: 6px 8px;
+  left: 36px;
+}
+
+.recognition {
+  display: inline-block;
+  font-family: $font-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-blue;
+  background-color: $color-white;
+  border: 1px solid $color-blue;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 4px;
+}
+
+.rating--excellent {
+  position: relative;
+  color: $color-green;
+  background-color: $color-light-green;
+  border: 1px solid $color-green;
+}
+
+.rating--excellent::after {
+  background-color: $color-green;
+  content: '';
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.rating--excellent::before {
+  background-color: $color-green;
+  content: '';
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 0 $color-green;
+}
+
+.rating--good {
+  position: relative;
+  color: $color-dark-blue;
+  background-color: $color-gray-rating;
+  border: 1px solid $color-gray-search;
+}
+
+.rating--good::before {
+  background-color: $color-gray-search;
+  content: '';
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 0 $color-gray-search;
+}
+
+
+.rating--bad {
+  position: relative;
+  color: $color-red;
+  background-color: $color-light-red;
+  border: 1px solid $color-red;
+}
+
+.rating--bad::before {
+  content: '';
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  border-radius: 50%;
+  box-shadow: -10px 0px 0px 0 $color-red;
+}
+
+.no-script {
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-red;
+}

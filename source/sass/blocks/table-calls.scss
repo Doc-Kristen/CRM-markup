@@ -1,26 +1,16 @@
-.table-container {
-  width: 1440px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: $color-white;
-  align-self: center;
-  border-radius: 8px;
-}
-
 .table-calls {
-  width: 100%;
+  width: 1440px;
   table-layout: fixed;
   background-color: $color-white;
-  align-self: center;
   border-collapse: collapse;
   word-break: break-all;
+  font-family: $font-text;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
-
 .table-calls__heading th {
-
   font-family: $font-text;
-  text-align: left;
   color: $color-light-gray;
   font-weight: 400;
   font-size: 14px;
@@ -32,6 +22,7 @@
 
 .table-calls__heading :nth-child(1) {
   width: 50px;
+  padding-left: 40px;
 }
 
 .table-calls__heading :nth-child(2) {
@@ -55,33 +46,76 @@
 }
 
 .table-calls__heading :nth-child(7) {
-  width: 90px;
+  width: 100px;
+  padding-right: 40px;
 }
 
 .table-calls__heading :last-child {
   text-align: right;
 }
 
-.table-calls__line {
-  text-align: left;
-}
-
 .table-calls__line td {
-
-  text-align: left;
   border-top: 1px solid $color-dark-gray;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
 }
 
-.table-calls__line:nth-child(1) {
-  text-align: right;
+.table-calls__line:hover {
+  background-color: $color-main-gray;
 }
 
-.table-calls__line :last-child {
-  text-align: right;
+.table-calls__type {
+  text-align: left;
+  padding-left: 40px;
 }
 
 .table-calls__type-call {
+  width: 13px;
+  height: 13px;
+}
+
+.table-calls__type-call--incoming-call {
   fill: $color-incoming-call;
+}
+
+.table-calls__type-call--unsuccessful-incoming-call {
+  fill: $color-red;
+}
+
+.table-calls__type-call--outgoing-call {
+  fill: $color-green;
+  transform: rotate(180deg);
+}
+
+.table-calls__type-call--unsuccessful-outgoing-call {
+  fill: $color-red;
+  transform: rotate(180deg);
+}
+
+.table-calls__worker {
+  position: relative;
+}
+
+.table-calls__internet-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 100px;
+  top: 30px;
+}
+
+.table-calls__source {
+  color: $color-placeholder-gray;
+}
+
+.table-calls__rating {
+  position: relative;
+}
+
+.table-calls__time {
+  text-align: end;
+  padding-right: 40px;
 }
